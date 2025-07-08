@@ -1,0 +1,124 @@
+ body {
+   font-family: Arial, sans-serif;
+   background: #000;
+   color: white;
+   display: flex;
+   justify-content: center;
+   padding: 20px;
+ }
+
+ .post {
+   background: #111;
+   border: 1px solid #333;
+   width: 400px;
+   border-radius: 10px;
+   overflow: hidden;
+ }
+
+ .post-header {
+   display: flex;
+   align-items: center;
+   padding: 10px;
+ }
+
+ .post-header img {
+   object-fit: fill;
+ }
+
+ .profile-pic {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   border: 2px solid #f05;
+   margin-right: 10px;
+ }
+
+ .username {
+   font-weight: bold;
+   font-size: 14px;
+ }
+
+ .post-img {
+   width: 100%;
+   height: auto;
+ }
+
+ .post-actions {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+   font-size: 20px;
+ }
+
+ .actions-left {
+   display: flex;
+   align-items: center;
+   gap: 3px;
+ }
+
+ .actions-left i,
+ .actions-right i {
+   margin-right: 15px;
+   cursor: pointer;
+ }
+
+ .likes {
+   padding: 0 10px;
+   font-weight: bold;
+ }
+
+ .caption {
+   padding: 5px 10px;
+ }
+
+ .comments {
+   padding: 5px 10px;
+   color: #aaa;
+   font-size: 14px;
+ }
+
+ .add-comment {
+   padding: 10px;
+   border-top: 1px solid #333;
+ }
+
+ .add-comment input {
+   width: 100%;
+   background: #000;
+   border: none;
+   color: white;
+   padding: 8px;
+ }
+
+ .add-comment input::placeholder {
+   color: #888;
+ }
+ .likeImg{
+  width: 500px;
+ }
+@keyframes popHeart {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  30% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+}
+
+.likeImg {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  pointer-events: none;
+  animation: popHeart 2s ease forwards;
+}
